@@ -65,7 +65,7 @@
 <meta property="og:site_name" content="地命海心">
 <meta property="og:description" content="导入库导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图
 12345678importnumpyasnpimportpandasaspd%matplotlibinlineimportmatplotlibmatplotlib.style.use(&apos;ggplot&apos;)importmatplotlib.pyplotaspltplt.rcParams[">
-<meta property="og:updated_time" content="2016-03-25T05:40:29.339Z">
+<meta property="og:updated_time" content="2016-03-25T07:27:17.894Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Pandas简明手册">
 <meta name="twitter:description" content="导入库导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图
@@ -150,6 +150,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -225,6 +235,25 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/data-analysis/" itemprop="url" rel="index">
+                    <span itemprop="name">数据分析</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -248,6 +277,7 @@
       
         <h2 id="导入库"><a href="#导入库" class="headerlink" title="导入库"></a>导入库</h2><p>导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">importnumpyasnp</span><br><span class="line">importpandasaspd</span><br><span class="line">%matplotlibinline</span><br><span class="line">importmatplotlib</span><br><span class="line">matplotlib.style.use(<span class="string">'ggplot'</span>)</span><br><span class="line">importmatplotlib.pyplotasplt</span><br><span class="line">plt.rcParams[<span class="string">'figure.figsize'</span>]=(<span class="number">15</span>,<span class="number">5</span>)</span><br><span class="line">plt.rcParams[<span class="string">'font.sans-serif'</span>]=[<span class="string">'MicrosoftYaHei'</span>]</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h2 id="读写文件"><a href="#读写文件" class="headerlink" title="读写文件"></a>读写文件</h2><p>读写excel和csv</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#excel</span></span><br><span class="line"></span><br><span class="line">df=pd.read_excel(filename,sheetname=<span class="string">'result'</span>)</span><br><span class="line">df.to_excel(filename,sheet_name=<span class="string">'Sheet1'</span>,index=<span class="number">0</span>)</span><br><span class="line"><span class="comment">#csv</span></span><br><span class="line">df=pd.read_csv(filename,encodeing=<span class="string">'GBK'</span>)</span><br><span class="line">df.to_csv(filename,index=<span class="number">0</span>,encoding=<span class="string">'gbk'</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="查看DataFrame概况"><a href="#查看DataFrame概况" class="headerlink" title="查看DataFrame概况"></a>查看DataFrame概况</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看文件头部,返回n行</span></span><br><span class="line">df.head(n)</span><br><span class="line"><span class="comment">#查看文件尾部</span></span><br><span class="line">df.tail(n)</span><br><span class="line"><span class="comment">#查看文件摘要</span></span><br><span class="line">df.info()</span><br><span class="line"><span class="comment">#查看描述和摘要</span></span><br><span class="line">df.describe()</span><br></pre></td></tr></table></figure>
@@ -280,6 +310,20 @@
     <footer class="post-footer">
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/25/Hexo配置/" rel="prev" title="Hexo配置">
+                Hexo配置 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -344,11 +388,18 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
