@@ -57,19 +57,19 @@
 
 
 
-<meta name="description" content="##导入库导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图
-12345678importnumpyasnpimportpandasaspd%matplotlibinlineimportmatplotlibmatplotlib.style.use(&apos;ggplot&apos;)importmatplotlib.pyplotaspltplt.rcParam">
+<meta name="description" content="##导入库##导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图
+12345678importnumpyasnpimportpandasaspd%matplotlibinlineimportmatplotlibmatplotlib.style.use(&apos;ggplot&apos;)importmatplotlib.pyplotaspltplt.rcPar">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pandas简明手册">
 <meta property="og:url" content="http://livestart.github.io/2016/03/23/Pandas简明手册/index.html">
 <meta property="og:site_name" content="地命海心">
-<meta property="og:description" content="##导入库导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图
-12345678importnumpyasnpimportpandasaspd%matplotlibinlineimportmatplotlibmatplotlib.style.use(&apos;ggplot&apos;)importmatplotlib.pyplotaspltplt.rcParam">
-<meta property="og:updated_time" content="2016-03-25T05:27:37.939Z">
+<meta property="og:description" content="##导入库##导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图
+12345678importnumpyasnpimportpandasaspd%matplotlibinlineimportmatplotlibmatplotlib.style.use(&apos;ggplot&apos;)importmatplotlib.pyplotaspltplt.rcPar">
+<meta property="og:updated_time" content="2016-03-25T05:33:05.586Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Pandas简明手册">
-<meta name="twitter:description" content="##导入库导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图
-12345678importnumpyasnpimportpandasaspd%matplotlibinlineimportmatplotlibmatplotlib.style.use(&apos;ggplot&apos;)importmatplotlib.pyplotaspltplt.rcParam">
+<meta name="twitter:description" content="##导入库##导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图
+12345678importnumpyasnpimportpandasaspd%matplotlibinlineimportmatplotlibmatplotlib.style.use(&apos;ggplot&apos;)importmatplotlib.pyplotaspltplt.rcPar">
 
 
 
@@ -246,7 +246,7 @@
       
 
       
-        <p>##导入库<br>导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图</p>
+        <p>##导入库##<br>导入numpy,pandas,matplotlib三个库,numpy提供随机函数,matplotlib画图</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">importnumpyasnp</span><br><span class="line">importpandasaspd</span><br><span class="line">%matplotlibinline</span><br><span class="line">importmatplotlib</span><br><span class="line">matplotlib.style.use(<span class="string">'ggplot'</span>)</span><br><span class="line">importmatplotlib.pyplotasplt</span><br><span class="line">plt.rcParams[<span class="string">'figure.figsize'</span>]=(<span class="number">15</span>,<span class="number">5</span>)</span><br><span class="line">plt.rcParams[<span class="string">'font.sans-serif'</span>]=[<span class="string">'MicrosoftYaHei'</span>]</span><br></pre></td></tr></table></figure>
 <p>##读写文件<br>读写excel和csv</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#excel</span></span><br><span class="line"></span><br><span class="line">df=pd.read_excel(filename,sheetname=<span class="string">'result'</span>)</span><br><span class="line">df.to_excel(filename,sheet_name=<span class="string">'Sheet1'</span>,index=<span class="number">0</span>)</span><br><span class="line"><span class="comment">#csv</span></span><br><span class="line">df=pd.read_csv(filename,encodeing=<span class="string">'GBK'</span>)</span><br><span class="line">df.to_csv(filename,index=<span class="number">0</span>,encoding=<span class="string">'gbk'</span>)</span><br></pre></td></tr></table></figure>
